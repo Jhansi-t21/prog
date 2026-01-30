@@ -1,0 +1,14 @@
+num=[1,7,4,3,2,10]
+tar=7
+low=0
+high=len(num)-1
+mid=(low+high)//2
+sorted=sort(num)
+while(mid!=tar):
+	mid=(low+high)//2
+	if mid==tar:
+		print("target found")
+	else if(tar<mid):
+		high=mid-1
+	else:
+		low=mid+1
